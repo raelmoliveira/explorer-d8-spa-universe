@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+
+  --fc-menu: #C4C4CC;
+  --fc-menu-hover: #ffffff;
+  --fc-header: #E1E1E6;
+  --fc-button-hover: #02799D;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin: 4rem 0 4rem 7.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.2rem;
+  color: var(--fc-menu);
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--fc-header);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+button {
+  margin-top: 2.4rem;
+  background-color: transparent;
+  padding: 1.2rem 3.2rem;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: var(--fc-menu-hover);
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: var(--fc-button-hover);
+  cursor: pointer;
+}
+
+#universe h1, #exploration h1 {
+  margin: 6.3rem 0 0 7.2rem;
+}
+
+#universe p, #exploration p {
+  margin: 1.6rem 0 0 7.2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--fc-header)
+}
